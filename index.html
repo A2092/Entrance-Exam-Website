@@ -407,7 +407,7 @@
                     $('#main').show();
                     $(".q-no").show();
                     $.getJSON("mock.json", function(data){
-                        $.each(obj, function(key, value) {
+                        $.each(data, function(key, value) {
                                         adding_Questions(data.Mocktest, count);
                         }
                     }).fail(function(){
